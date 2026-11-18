@@ -1,7 +1,16 @@
 @import "tailwindcss";
 
+@layer base {
+  html,
+  body {
+    @apply bg-black;
+  }
+}
 @layer components {
   .center {
     @apply flex items-center justify-center;
+  }
+  .grid-cell {
+    @apply w-fit p-2 m-0.5 rounded-xs;
   }
 }
